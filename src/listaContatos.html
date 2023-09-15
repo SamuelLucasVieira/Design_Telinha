@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <style>
+        .lista-de-contatos {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.lista-de-contatos .overlap-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 430px;
+  height: 932px;
+}
+
+.lista-de-contatos .overlap {
+  position: relative;
+  width: 501px;
+  height: 971px;
+  top: -39px;
+}
+
+.lista-de-contatos .layout {
+  position: absolute;
+  width: 430px;
+  height: 145px;
+  top: 48px;
+  left: 0;
+}
+
+.lista-de-contatos .line {
+  top: 144px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.lista-de-contatos .img {
+  top: 71px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.lista-de-contatos .image {
+  width: 21px;
+  height: 26px;
+  top: 0;
+  left: 14px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lista-de-contatos .barra-de-pesquisa {
+  position: absolute;
+  width: 383px;
+  height: 33px;
+  top: 134px;
+  left: 25px;
+}
+
+.lista-de-contatos .overlap-group {
+  position: relative;
+  width: 381px;
+  height: 33px;
+  background-color: #5d5454;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #171212;
+}
+
+.lista-de-contatos .image-wrapper {
+  position: absolute;
+  width: 31px;
+  height: 33px;
+  top: 0;
+  left: 0;
+  background-color: #bdb8b8;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.lista-de-contatos .image-2 {
+  width: 20px;
+  height: 20px;
+  top: 8px;
+  left: 6px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lista-de-contatos .text-wrapper {
+  position: absolute;
+  top: 7px;
+  left: 37px;
+  font-family: "Inter-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lista-de-contatos .perfil {
+  position: absolute;
+  width: 66px;
+  height: 730px;
+  top: 241px;
+  left: 32px;
+}
+
+.lista-de-contatos .textos {
+  position: absolute;
+  width: 470px;
+  height: 971px;
+  top: 0;
+  left: 31px;
+}
+
+.lista-de-contatos .head {
+  position: absolute;
+  width: 477px;
+  height: 114px;
+  top: 0;
+  left: 1px;
+}
+
+.lista-de-contatos .div {
+  position: relative;
+  width: 469px;
+  height: 114px;
+}
+
+.lista-de-contatos .text-wrapper-2 {
+  width: 107px;
+  left: 0;
+  position: absolute;
+  top: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-3 {
+  width: 184px;
+  left: 144px;
+  position: absolute;
+  top: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-4 {
+  position: absolute;
+  width: 184px;
+  top: 39px;
+  left: 285px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-5 {
+  position: absolute;
+  width: 169px;
+  top: 0;
+  left: 19px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0.75px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .contatos-texto {
+  position: absolute;
+  width: 208px;
+  height: 819px;
+  top: 152px;
+  left: 0;
+}
+
+.lista-de-contatos .overlap-2 {
+  position: absolute;
+  width: 174px;
+  height: 190px;
+  top: 0;
+  left: 0;
+}
+
+.lista-de-contatos .text-wrapper-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-7 {
+  position: absolute;
+  width: 93px;
+  top: 132px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-8 {
+  position: absolute;
+  width: 93px;
+  top: 56px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+}
+
+.lista-de-contatos .seguidor {
+  position: absolute;
+  width: 93px;
+  top: 752px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-9 {
+  position: absolute;
+  width: 93px;
+  top: 674px;
+  left: 75px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-10 {
+  position: absolute;
+  width: 93px;
+  top: 606px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .barba-branca {
+  position: absolute;
+  width: 105px;
+  top: 522px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-11 {
+  position: absolute;
+  width: 93px;
+  top: 444px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-12 {
+  position: absolute;
+  width: 93px;
+  top: 288px;
+  left: 79px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-13 {
+  position: absolute;
+  width: 93px;
+  top: 368px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.lista-de-contatos .text-wrapper-14 {
+  position: absolute;
+  width: 93px;
+  top: 210px;
+  left: 81px;
+  font-family: "Inter-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="lista-de-contatos">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="layout">
+            <img class="line" src="imagem/line-9.svg" />
+            <img class="img" src="imagem/line-8.svg" />
+            <a href="perfil.html"><img class="image" src="imagem/image-1.png" /></a>
+          </div>
+          <div class="barra-de-pesquisa">
+            <div class="overlap-group">
+              <div class="image-wrapper"><img class="image-2" src="imagem/image-5.png" /></div>
+              <div class="text-wrapper">Pesquisar</div>
+            </div>
+          </div>
+          <img class="perfil" src="imagem/perfil.png" />
+          <div class="textos">
+            <div class="head">
+              <div class="div">
+                <div class="text-wrapper-2">+ 5000 seguidores</div>
+                <div class="text-wrapper-3">+ 5000 seguindo</div>
+                <div class="text-wrapper-4">0 assinatura</div>
+                <div class="text-wrapper-5">Amumu</div>
+              </div>
+            </div>
+            <div class="contatos-texto">
+              <div class="overlap-2">
+                <div class="text-wrapper-6">Todos os seguidores</div>
+                <div class="text-wrapper-7">Miss Fortune</div>
+                <div class="text-wrapper-8">Luffy</div>
+              </div>
+              <div class="seguidor">Naruto</div>
+              <div class="text-wrapper-9">Zoro</div>
+              <div class="text-wrapper-10">Sanji</div>
+              <div class="barba-branca">Barba Branca</div>
+              <div class="text-wrapper-11">Nami</div>
+              <div class="text-wrapper-12">Morgana</div>
+              <div class="text-wrapper-13">Oriana</div>
+              <div class="text-wrapper-14">LULU</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

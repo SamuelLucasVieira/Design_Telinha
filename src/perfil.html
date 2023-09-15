@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        .perfil {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.perfil .overlap-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 430px;
+  height: 932px;
+}
+
+.perfil .overlap {
+  position: relative;
+  width: 448px;
+  height: 908px;
+  top: 12px;
+}
+
+.perfil .nome-do-perfil-e-bio {
+  position: absolute;
+  width: 417px;
+  height: 395px;
+  top: 0;
+  left: 9px;
+}
+
+.perfil .overlap-group {
+  position: absolute;
+  width: 275px;
+  height: 308px;
+  top: 87px;
+  left: 0;
+}
+
+.perfil .div {
+  position: absolute;
+  width: 218px;
+  height: 300px;
+  top: 8px;
+  left: 0;
+}
+
+.perfil .text-wrapper {
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 23px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .ellipse {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.perfil .p {
+  position: absolute;
+  top: 179px;
+  left: 8px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-2 {
+  top: 0;
+  left: 182px;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 23px;
+  letter-spacing: 1.15px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .image {
+  top: 0;
+  left: 371px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.perfil .imagens-perfil {
+  position: absolute;
+  width: 416px;
+  height: 266px;
+  top: 567px;
+  left: 4px;
+}
+
+.perfil .rectangle {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 141px;
+  left: 291px;
+  object-fit: cover;
+}
+
+.perfil .img {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.perfil .rectangle-2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 0;
+  left: 145px;
+  object-fit: cover;
+}
+
+.perfil .rectangle-3 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 0;
+  left: 291px;
+}
+
+.perfil .rectangle-4 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 141px;
+  left: 0;
+}
+
+.perfil .rectangle-5 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 141px;
+  left: 145px;
+  object-fit: cover;
+}
+
+.perfil .layout {
+  position: absolute;
+  width: 448px;
+  height: 905px;
+  top: 3px;
+  left: 0;
+}
+
+.perfil .icon-park-solid {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 875px;
+  left: 284px;
+}
+
+.perfil .pajamas-file {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 874px;
+  left: 200px;
+}
+
+.perfil .ellipse-2 {
+  width: 30px;
+  height: 30px;
+  top: 875px;
+  left: 368px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.perfil .ph-magnifying-glass {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 874px;
+  left: 113px;
+}
+
+.perfil .teenyicons-home {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 875px;
+  left: 26px;
+}
+
+.perfil .overlap-2 {
+  position: absolute;
+  width: 430px;
+  height: 205px;
+  top: 359px;
+  left: 0;
+}
+
+.perfil .ellipse-3 {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 9px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.perfil .line {
+  top: 85px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.perfil .line-2 {
+  top: 176px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.perfil .text-wrapper-3 {
+  position: absolute;
+  top: 84px;
+  left: 15px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-4 {
+  left: 38px;
+  position: absolute;
+  top: 56px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-5 {
+  left: 331px;
+  position: absolute;
+  top: 56px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-6 {
+  left: 192px;
+  position: absolute;
+  top: 56px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-7 {
+  position: absolute;
+  top: 84px;
+  left: 324px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-8 {
+  position: absolute;
+  top: 84px;
+  left: 174px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .text-wrapper-9 {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .line-3 {
+  top: 62px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.perfil .line-4 {
+  top: 851px;
+  position: absolute;
+  width: 430px;
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+}
+
+.perfil .overlap-3 {
+  position: absolute;
+  width: 120px;
+  height: 121px;
+  top: 162px;
+  left: 159px;
+}
+
+.perfil .rectangle-6 {
+  position: absolute;
+  width: 120px;
+  height: 39px;
+  top: 41px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 7px;
+}
+
+.perfil .text-wrapper-10 {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .overlap-4 {
+  position: absolute;
+  width: 120px;
+  height: 121px;
+  top: 162px;
+  left: 300px;
+}
+
+.perfil .text-wrapper-11 {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.perfil .image-2 {
+  top: 113px;
+  left: 360px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.perfil .solar-settings-bold {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 9px;
+}
+a:hover{
+  text-decoration: none;
+  color: red;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+    </style>
+  </head>
+  <body>
+    <div class="perfil">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="nome-do-perfil-e-bio">
+            <div class="overlap-group">
+              <div class="div">
+                <div class="text-wrapper">Amumu Page</div>
+                <img class="ellipse" src="imagem/ellipse-1.png" />
+                <p class="p">Posso te dar um abraço?</p>
+              </div>
+              <div class="text-wrapper-2">Amumu</div>
+            </div>
+            <img class="image" src="imagem/image-3.png" />
+          </div>
+          <div class="imagens-perfil">
+            <img class="rectangle" src="imagem/rectangle-11.png" />
+            <img class="img" src="imagem/rectangle-6.png" />
+            <img class="rectangle-2" src="imagem/rectangle-7.png" />
+            <img class="rectangle-3" src="imagem/rectangle-8.png" />
+            <img class="rectangle-4" src="imagem/rectangle-9.png" />
+            <img class="rectangle-5" src="imagem/rectangle-10.png" />
+          </div>
+          <div class="layout">
+            <img class="icon-park-solid" src="imagem/icon-park-solid-video-two.svg" />
+            <img class="pajamas-file" src="imagem/pajamas-file-addition.svg" />
+            <a href="perfil.html"><img class="ellipse-2" src="imagem/ellipse-4.png" /></a>
+            <img class="ph-magnifying-glass" src="imagem/ph-magnifying-glass-bold.svg" />
+            <img class="teenyicons-home" src="imagem/teenyicons-home-solid.svg" />
+            <div class="overlap-2">
+              <img class="ellipse-3" src="imagem/ellipse-2.png" />
+              <img class="line" src="imagem/line-5.svg" />
+              <img class="line-2" src="imagem/line-6.svg" />
+              <div class="text-wrapper-3"><a href="feed.html">publicações</a></div>
+              <div class="text-wrapper-4">+5000</div>             
+              <div class="text-wrapper-5"><a href="listaContatos.html">+5000</a></div>
+              <div class="text-wrapper-6">+5000</div>
+              <div class="text-wrapper-7">seguindo</div>
+              <div class="text-wrapper-8"><a href="listaContatos.html">seguidores</a></div>
+              <div class="text-wrapper-9">Novo</div>
+            </div>
+            <img class="line-3" src="imagem/line-4.svg" />
+            <img class="line-4" src="imagem/line-7.svg" />
+            <div class="overlap-3">
+              <div class="rectangle-6"></div>
+              <div class="text-wrapper-10">Editar perfil</div>
+            </div>
+            <div class="overlap-4">
+              <div class="rectangle-6"></div>
+              <div class="text-wrapper-11">Ver itens</div>
+            </div>
+            <img class="image-2" src="imagem/image-2.png" />
+            <a href="login.html"><img class="solar-settings-bold" src="imagem/solar-settings-bold.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

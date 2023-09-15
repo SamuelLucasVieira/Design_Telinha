@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .login {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login .div {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgb(189.23, 69.56, 31.77) 0%,
+    rgb(169.69, 132.16, 88.11) 33.85%,
+    rgb(215.66, 108.42, 237.96) 69.27%,
+    rgb(121.13, 23.22, 219.03) 100%
+  );
+  width: 430px;
+  height: 932px;
+  position: relative;
+}
+
+.login .logos-instagram {
+  position: absolute;
+  width: 282px;
+  height: 73px;
+  top: 182px;
+  left: 81px;
+}
+
+.login .overlap {
+  position: absolute;
+  width: 430px;
+  height: 653px;
+  top: 293px;
+  left: 0;
+}
+
+.login .layout {
+  position: absolute;
+  width: 430px;
+  height: 560px;
+  top: 0;
+  left: 0;
+}
+
+.login .line {
+  width: 430px;
+  top: 558px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.login .rectangle {
+  top: 103px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 357px;
+  height: 59px;
+  left: 36px;
+  border-radius: 7px;
+}
+
+.login .rectangle-2 {
+  top: 0;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 357px;
+  height: 59px;
+  left: 36px;
+  border-radius: 7px;
+}
+
+.login .rectangle-3 {
+  top: 263px;
+  background-color: #22a7f2;
+  position: absolute;
+  width: 357px;
+  height: 59px;
+  left: 36px;
+  border-radius: 7px;
+}
+
+.login .img {
+  width: 140px;
+  top: 396px;
+  left: 36px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.login .line-2 {
+  width: 140px;
+  top: 396px;
+  left: 253px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.login .textos {
+  position: absolute;
+  width: 332px;
+  height: 624px;
+  top: 29px;
+  left: 54px;
+}
+
+.login .n-o-tem-uma-conta {
+  position: absolute;
+  top: 503px;
+  left: 0;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper {
+  color: #ffffff;
+}
+
+.login .span {
+  color: #2493f9;
+}
+
+.login .overlap-group {
+  position: absolute;
+  width: 220px;
+  height: 279px;
+  top: 203px;
+  left: 50px;
+}
+
+.login .text-wrapper-2 {
+  position: absolute;
+  top: 104px;
+  left: 97px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 89px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-4 {
+  position: absolute;
+  top: 158px;
+  left: 0;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 121px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-5 {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  font-family: "Inter-Thin", Helvetica;
+  font-weight: 100;
+  color: #000000cc;
+  font-size: 12px;
+  letter-spacing: 7.08px;
+  line-height: 0.1px;
+}
+
+.login .email-or-phone {
+  position: absolute;
+  top: 99px;
+  left: 14px;
+  font-family: "Inter-Thin", Helvetica;
+  font-weight: 100;
+  color: #000000cc;
+  font-size: 12px;
+  letter-spacing: 7.08px;
+  line-height: 0.1px;
+}
+
+.login .imagem {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 439px;
+  left: 73px;
+  background-image: url(./img/image-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="div">
+        <img class="logos-instagram" src="imagem/vector.svg" />
+        <div class="overlap">
+          <div class="layout">
+            <img class="line" src="img/line-3.svg" />
+            <div class="rectangle"></div>
+            <div class="rectangle-2"></div>
+            <div class="rectangle-3"></div>
+            <img class="img" src="img/line-1.svg" />
+            <img class="line-2" src="img/line-2.svg" />
+          </div>
+          <div class="textos">
+            <p class="n-o-tem-uma-conta">
+              <span class="text-wrapper">Não tem uma conta? </span> <span class="span">Cadastre-se</span>
+            </p>
+            <div class="overlap-group">
+              <div class="text-wrapper-2">OR</div>
+              <div class="text-wrapper-3"><a href="perfil.html">Log in</a></div>
+              <div class="text-wrapper-4">Entrar com o Facebook</div>
+            </div>
+            <div class="text-wrapper-5">email or phone</div>
+            <div class="email-or-phone">password</div>
+          </div>
+          <div class="imagem"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <style>
+      .feed-de-noticias {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.feed-de-noticias .overlap-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 430px;
+  height: 932px;
+}
+
+.feed-de-noticias .overlap {
+  position: relative;
+  width: 435px;
+  height: 1170px;
+  left: -1px;
+}
+
+.feed-de-noticias .layout {
+  position: absolute;
+  width: 433px;
+  height: 1170px;
+  top: 0;
+  left: 0;
+}
+
+.feed-de-noticias .line {
+  width: 430px;
+  top: 192px;
+  left: 1px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.feed-de-noticias .overlap-group {
+  position: absolute;
+  width: 430px;
+  height: 113px;
+  top: 0;
+  left: 1px;
+}
+
+.feed-de-noticias .div {
+  position: absolute;
+  width: 430px;
+  height: 113px;
+  top: 0;
+  left: 0;
+}
+
+.feed-de-noticias .img {
+  width: 430px;
+  top: 80px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.feed-de-noticias .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-family: "Galada", Helvetica;
+  font-weight: 400;
+  color: #030303;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 113px;
+  white-space: nowrap;
+}
+
+.feed-de-noticias .image {
+  width: 35px;
+  height: 35px;
+  top: 21px;
+  left: 381px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-2 {
+  width: 35px;
+  height: 34px;
+  top: 21px;
+  left: 331px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-3 {
+  width: 23px;
+  height: 22px;
+  top: 472px;
+  left: 13px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .teenyicons-home {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 889px;
+  left: 28px;
+}
+
+.feed-de-noticias .ph-magnifying-glass {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 888px;
+  left: 115px;
+}
+
+.feed-de-noticias .pajamas-file {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 888px;
+  left: 202px;
+}
+
+.feed-de-noticias .ellipse {
+  width: 30px;
+  height: 30px;
+  top: 889px;
+  left: 370px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-4 {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 805px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-5 {
+  width: 35px;
+  height: 35px;
+  top: 1602px;
+  left: -654px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-6 {
+  width: 35px;
+  height: 34px;
+  top: 1602px;
+  left: -697px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-7 {
+  width: 23px;
+  height: 23px;
+  top: 472px;
+  left: 56px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .line-2 {
+  width: 429px;
+  top: 865px;
+  left: 1px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.feed-de-noticias .image-8 {
+  width: 23px;
+  height: 23px;
+  top: 805px;
+  left: 52px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .story {
+  position: absolute;
+  width: 370px;
+  height: 60px;
+  top: 107px;
+  left: 35px;
+}
+
+.feed-de-noticias .ellipse-2 {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 310px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.feed-de-noticias .ellipse-3 {
+  width: 60px;
+  height: 60px;
+  left: 230px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.feed-de-noticias .ellipse-4 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 150px;
+}
+
+.feed-de-noticias .ellipse-5 {
+  width: 60px;
+  height: 60px;
+  left: 70px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.feed-de-noticias .overlap-2 {
+  position: absolute;
+  width: 55px;
+  height: 57px;
+  top: 3px;
+  left: 0;
+}
+
+.feed-de-noticias .ellipse-6 {
+  width: 55px;
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.feed-de-noticias .ellipse-7 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 44px;
+  left: 37px;
+  object-fit: cover;
+}
+
+.feed-de-noticias .fotos-do-feed {
+  position: absolute;
+  width: 434px;
+  height: 682px;
+  top: 221px;
+  left: 1px;
+}
+
+.feed-de-noticias .rectangle {
+  position: absolute;
+  width: 430px;
+  height: 245px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.feed-de-noticias .overlap-3 {
+  position: absolute;
+  width: 430px;
+  height: 262px;
+  top: 334px;
+  left: 0;
+}
+
+.feed-de-noticias .amumu-hora-do-caf {
+  position: absolute;
+  width: 357px;
+  top: 238px;
+  left: 12px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 113px;
+  white-space: nowrap;
+}
+
+.feed-de-noticias .span {
+  font-weight: 700;
+}
+
+.feed-de-noticias .text-wrapper-2 {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 113px;
+}
+
+.feed-de-noticias .amumu-amumu-hextec {
+  position: absolute;
+  width: 357px;
+  top: 251px;
+  left: 12px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 113px;
+  white-space: nowrap;
+}
+
+.feed-de-noticias .icon-park-solid {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 889px;
+  left: 286px;
+}
+#i{
+  position: relative;
+  margin-top: -20px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="feed-de-noticias">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="layout">
+            <img class="line" src="imagem/img/line-8.svg" />
+            <div class="overlap-group">
+              <div class="div">
+                <img class="img" src="imagem/img/line-8.svg" />
+                <div class="text-wrapper">Instagram</div>
+              </div>
+              <img class="image" src="imagem/img/image-4.png" />
+              <img class="image-2" src="imagem/img/image-3.png" />
+            </div>
+            <img class="image-3" src="imagem/img/image-5.png" />
+            <img class="teenyicons-home" src="imagem/img/teenyicons-home-solid.svg" />
+            <img class="ph-magnifying-glass" src="imagem/img/ph-magnifying-glass-bold.svg" />
+            <img class="pajamas-file" src="imagem/img/pajamas-file-addition.svg" />
+            <a href="perfil.html"><img class="ellipse" src="imagem/img/ellipse-3-1.png" /></a>
+            <img class="image-4" src="imagem/img/image-5.png" />
+            <img class="image-5" src="imagem/img/image-8.png" />
+            <img class="image-6" src="imagem/img/image-8.png" />
+            <img class="image-7" src="imagem/img/image-7.png" />
+            <img class="line-2" src="imagem/img/line-10.svg" />
+            <img class="image-8" src="imagem/img/image-7.png" />
+          </div>
+          <div class="story">
+            <img class="ellipse-2" src="imagem/img/ellipse-2-3.png" />
+            <img class="ellipse-3" src="imagem/img/ellipse-2-2.png" />
+            <img class="ellipse-4" src="imagem/img/ellipse.png" />
+            <img class="ellipse-5" src="imagem/img/ellipse-2-1.png" />
+            <div class="overlap-2">
+              <img class="ellipse-6" src="imagem/img/ellipse-2.png" /> <a href="perfil.html"><img class="ellipse-7" src="imagem/img/ellipse-3.png" /></a>
+            </div>
+          </div>
+          <div class="fotos-do-feed">
+            <img class="rectangle" src="imagem/img/rectangle-12-1.png" />
+            <div class="overlap-3">
+              <img class="rectangle" src="imagem/img/rectangle-12.png" />
+              <div id="i"><p class="amumu-hora-do-caf">
+                <span class="span">Amumu</span>
+                <span class="text-wrapper-2">Hora do café </span>
+              </p></div>
+            </div>
+            <div id="i"><p class="amumu-amumu-hextec">
+              <span class="span">Amumu</span>
+              <span class="text-wrapper-2">Amumu hextec voltou</span>
+              </div>
+            </p>
+          </div>
+          <img class="icon-park-solid" src="imagem/img/icon-park-solid-video-two.svg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
